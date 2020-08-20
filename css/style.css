@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+
+body{
+    max-width: 1200px;
+    /* height: 100%; */
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.wrapper{
+    text-align:center;
+    margin:0 0 80px 0;
+}
+
+/*-- --------------- --
+    Header     
+-- ----------------- --*/ 
+.header-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100px;
+    width: auto;
+}
+.header_logo{
+    /* max-width: 381px; */
+    /* height: 80px; */
+    margin: 0 0 0 10px
+}
+.nav_list{
+    display: flex;
+    margin: 0 0 0 50px;
+}
+.nav_item{
+    font-size:21px;
+    margin: 50px 50px 50px 0;
+}
+.nav_item>a{
+    color:gray;
+    text-decoration: none;
+}
+
+/*-- --------------- --
+    main visual     
+-- ----------------- --*/ 
+.mainvisual{
+    position: relative;
+}
+.mv_text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate3d(-50%,-50%,0);
+}
+.mv_text1{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    white-space: nowrap;
+    margin: 0 0 30px 0;
+}
+.mv_text2{
+    text-align:center;
+    font-size:20px;
+    color:white;
+    white-space: nowrap;
+}
+
+/*-- --------------- --
+    #About      
+-- ----------------- --*/ 
+.contents_title{
+    font-size:24px;
+    font-weight:bold;
+    color:gold;
+    margin:60px 0 30px 0;
+}
+.contents_header{
+    font-size:18px;
+    margin-bottom:60px;
+}
+.menu_text{
+    font-size:16px;
+    margin-bottom:40px;
+    line-height: 1.4;
+}
+.about_images{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+/*-- --------------- --
+    #Course      
+-- ----------------- --*/
+.course_box{
+    height:280px;
+    display:flex;
+    justify-content: center;
+}
+.course_image{
+    width:100%;
+    background-image: url("../img/course_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.course_box_inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:rgb(233, 232, 232);
+}
+.course_describe{
+    width: 100%;
+    text-align: left;
+}
+.course_header{
+    font-size:24px;
+    font-weight:bold;
+    white-space: nowrap;
+    margin:0 0 40px 50px;
+}
+.course_text{
+    font-size:15px;
+    white-space: nowrap;
+    margin: 0 0 0 50px;
+    line-height: 1.4;
+}
+.course_describe2{
+    width: 100%;
+    text-align: right;
+}
+.course_header2{
+    font-size:24px;
+    font-weight:bold;
+    white-space: nowrap;
+    margin:0 50px 40px 0;
+}
+.course_text2{
+    font-size:15px;
+    white-space: nowrap;
+    margin: 0 50px 0 0;
+    line-height: 1.4;
+}
+.course_image2{
+    width:100%;
+    background-image: url("../img/course_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.course_image3{
+    width:100%;
+    background-image: url("../img/course_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-- --------------- --
+    #News      
+-- ----------------- --*/
+
+.news_boxs{
+    width: 960px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 0 30px 0;
+}
+
+.news_box{
+    width: 300px;
+    font-size:16px;
+}
+.news_box:hover{
+    width: 300px;
+    font-size:16px;
+    outline:solid 10px orange;
+}
+.news_date{
+    text-align:left;
+    margin:30px 0 24px 0;
+}
+.news_text{
+    text-align:left;
+    line-height: 1.4;
+}
+.btn{
+    display:block;
+    width: 300px;
+    font-size:18px;
+    padding:21px 0;
+    color:white;
+    background-color: #ffd61a;
+    text-decoration: none;
+    margin:30px auto;
+}
+.btn:hover{
+    display:block;
+    width: 300px;
+    font-size:18px;
+    padding:21px 0;
+    color:white;
+    background-color: orange;
+    text-decoration: none;
+    margin:30px auto;
+}
+iframe{
+    flex:box;
+    height: 200px;
+    width: 90%;
+    margin:0 auto;
+}
+
+table {
+    margin:60px auto;
+    width: 600px;
+    border-collapse:collapse;
+}
+table td{
+    font-size:16px;
+    text-align:left;
+    padding:17px 0;
+}
+table tr{
+    margin:auto;
+}
+
+/*-- --------------- --
+    #Contact      
+-- ----------------- --*/
+.contact{
+    margin: 0 0 140px 0;
+}
+.contact_wrapper{
+    width: 598px;
+    margin:30px auto 140px;
+}
+.form_inner{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+.form_title{
+    width: 160px; /* 幅240 - 右64 - 左16 =160px*/
+    font-size: 16px;
+    text-align: left;
+    /* font-weight: bold; */
+    padding: 14px 64px 9px 16px;
+    line-height: 1.1;
+}
+.form_item{
+    width:312px;
+    padding:8px;
+}
+.form_parts{
+    box-sizing:border-box;
+    border: solid 1px #bfbfbf;
+    padding:8px;
+    width: 100%;
+}
+.form_parts_select{
+    width: 312px;
+    padding: 16px 8px 16px 8px;
+}
+select{
+    width: 312px;
+    height: 32px;
+}
+.form_parts_check{
+    font-size:12px;
+    width: 312px;
+    text-align: left;
+    padding:12px 0 12px 8px;
+}
+
+.form_border{
+    border-bottom: solid 1px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+}
+.form_border_right{
+    border-bottom: solid 1px #bfbfbf;
+}
+.border_top{
+    border-top: solid 1px #bfbfbf;
+}
+.btn_submit{
+    display: block;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    background: #ffd61a;
+    color: #ffffff;
+    border:solid 0px white;
+    margin:0 auto;
+}
+.btn_submit:hover{
+    display: block;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    background: orange;
+    color: #ffffff;
+    border:solid 0px white;
+    margin:0 auto;
+}
+/*-- --------------- --
+    #Footer      
+-- ----------------- --*/
+.footer_box{
+    color: white;
+    background-color: #707070;
+    padding: 30px 0;
+    text-align:center;
+}
+
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
